@@ -20,11 +20,11 @@
 include_recipe 'build-essential'
 
 case node["platform_family"]
-when 'debian'
+when "debian"
   pcre_pkg = 'libpcre3-dev'
   ssl_pkg = 'libssl-dev'
   zlib_pkg = 'zlib1g-dev'
-when 'rhel'
+when "rhel"
   pcre_pkg = 'pcre-devel'
   ssl_pkg = 'openssl-devel'
   zlib_pkg = 'zlib-devel'
